@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="calculator bg-dark p-4 rounded-lg shadow-lg">
+            <div class="display bg-black text-right text-light p-3 rounded mb-4">
+                <input type="text" class="form-control text-right bg-transparent border-0 text-light" id="display" disabled>
+            </div>
+            <div class="button-grid">
+                <div class="row mb-2">
+                    <button class="btn btn-success col">C</button>
+                    <button class="btn btn-danger col"><i class="fas fa-backspace"></i></button>
+                </div>
+                <div class="row mb-2">
+                    <button class="btn btn-light col">7</button>
+                    <button class="btn btn-light col">8</button>
+                    <button class="btn btn-light col">9</button>
+                    <button class="btn btn-secondary col font-weight-bold">-</button>
+                </div>
+                <div class="row mb-2">
+                    <button class="btn btn-light col">4</button>
+                    <button class="btn btn-light col">5</button>
+                    <button class="btn btn-light col">6</button>
+                    <button class="btn btn-secondary col font-weight-bold">+</button>
+                </div>
+                <div class="row mb-2">
+                    <button class="btn btn-light col">1</button>
+                    <button class="btn btn-light col">2</button>
+                    <button class="btn btn-light col">3</button>
+                    <button class="btn btn-secondary text-bold col font-weight-bold">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary col" rowspan="3">=</button>
+                    <button class="btn btn-light col">0</button>
+                    <button class="btn btn-light col">.</button>
+                    <button class="btn btn-secondary col font-weight-bold">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
